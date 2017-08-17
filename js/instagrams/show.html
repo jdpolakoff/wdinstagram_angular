@@ -1,0 +1,9 @@
+<div ui-view>
+  <h2> <a ui-sref="instaEdit({id: vm.instagram.id})"> Edit or delete this Instagram </a></h2>
+</div>
+
+<h4> {{vm.instagram.author}} </h4>
+  <div>
+    <img src="{{vm.instagram.photo_url}}">
+  </div>
+<h4> {{vm.instagram.body}} </h4>

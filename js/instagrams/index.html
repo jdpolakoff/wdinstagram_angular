@@ -1,7 +1,10 @@
-<h2> All photos: </h2>
+
+<div ui-view>
+  <h3><a ui-sref="instaNew">Make a new post</a></h3>
+</div>
 
 <div ng-repeat="insta in vm.instagrams">
-  <p>{{insta.author}}</p>
-  <img src="{{insta.photo_url}}" style="height: 100px; width: 100px;border-radius: 100px;}">
-  <p>{{insta.body}}</p>
+    <p>{{insta.author}}</p>
+    <img src="{{insta.photo_url}}" />
+    <p><a ui-sref="instaShow({id: insta.id})">{{insta.body}}</a></p>
 </div>

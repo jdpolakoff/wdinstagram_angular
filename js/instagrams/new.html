@@ -1,0 +1,10 @@
+
+<h2 > New Instagram </h2>
+
+<p><a ui-sref="instaIndex">Cancel</a></p>
+<form>
+  <input placeholder ="Your name" ng-model="vm.newInsta.author" />
+  <input placeholder="Photo URL" ng-model="vm.newInsta.photo_url" />
+  <input placeholder="Your post goes here" ng-model="vm.newInsta.body" />
+  <button type="button" ng-click="vm.create()">Post</button>
+</form>
