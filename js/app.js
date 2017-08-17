@@ -94,4 +94,9 @@ function InstaEditControllerFunction ($state, Insta) {
   this.update = function () {
     this.insta.$update({id: $state.params.id})
   }
+  this.destroy = function () {
+    this.insta.$delete({id: $state.params.id}, () => {
+      $state.go('instaIndex')
+  })
+}
 }
